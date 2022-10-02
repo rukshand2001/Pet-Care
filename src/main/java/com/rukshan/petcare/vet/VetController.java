@@ -1,20 +1,16 @@
-package com.rukshan.petcare.Pet;
-
+package com.rukshan.petcare.vet;
 import com.rukshan.petcare.utils.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
-public class PetController {
+public class VetController {
+        @Autowired
+        private VetServices vetServices;
 
-    @Autowired
-    private PetServices petservices;
-
-    @GetMapping("/pet/ping")
-    public Message ping(){
-        return petservices.ping();
-    }
+        @GetMapping("/vet/ping")
+        public Message vet_ping(){
+            return vetServices.ping();
+        }
 }
