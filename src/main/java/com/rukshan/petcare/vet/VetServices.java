@@ -1,14 +1,13 @@
-package com.rukshan.petcare.Pet;
+package com.rukshan.petcare.vet;
 
 import com.rukshan.petcare.utils.Message;
 import org.springframework.stereotype.Service;
 
 @Service
-public class PetServices {
-
-    public Message ping() {
-
+public class VetServices {
+    public Message vet_ping(){
         /* calling ping function */
-        return new Message("Hello pet",200);
+
+        return new Message("Hello vet",300);
     }
 }
