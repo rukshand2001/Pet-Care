@@ -5,9 +5,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class VetServices {
-    public Message vet_ping(){
+    public Message ping(){
         /* calling ping function */
 
-        return new Message("Hello vet",300);
+        return new Message("Hello vet",200);
     }
 }

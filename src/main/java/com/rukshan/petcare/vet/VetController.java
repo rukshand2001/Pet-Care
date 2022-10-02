@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class VetController {
         @Autowired
-        private VetServices vetservices;
+        private VetServices vetServices;
 
-        @GetMapping("/vet_ping")
+        @GetMapping("vet/ping")
         public Message vet_ping(){
-            return vetservices.vet_ping();
+            return vetServices.ping();
         }
 }
