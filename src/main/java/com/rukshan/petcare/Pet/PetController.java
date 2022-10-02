@@ -13,7 +13,7 @@ public class PetController {
     @Autowired
     private PetServices petservices;
 
-    @GetMapping("/ping")
+    @GetMapping("/pet/ping")
     public Message ping(){
         return petservices.ping();
     }

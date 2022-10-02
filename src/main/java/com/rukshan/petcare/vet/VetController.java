@@ -9,7 +9,7 @@ public class VetController {
         @Autowired
         private VetServices vetServices;
 
-        @GetMapping("vet/ping")
+        @GetMapping("/vet/ping")
         public Message vet_ping(){
             return vetServices.ping();
         }
